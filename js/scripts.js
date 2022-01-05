@@ -209,7 +209,7 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
-        if (($('#invite_code') !== '10042022') || ($('#invite_code') !== '08052022')) {
+        if (($('#invite_code').val() !== '10042022') || ($('#invite_code').val() !== '08052022')) {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
             $.post('https://script.google.com/macros/s/1PMH0tUDWatb-c0m9FBQ5xEngO6SnAruxkMZVZpl-cbbkQMqhjrY9ATx2/exec', data)
