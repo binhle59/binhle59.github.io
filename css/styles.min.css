@@ -760,7 +760,7 @@ header .member-actions {
   z-index: -1;
 }
 #video-bg {
-  height: 300px;
+  height: 400px;
 }
 #video-content {
   width: 100%;
@@ -772,7 +772,7 @@ header .member-actions {
 }
 #video-content h5 {
   color: #ffffff;
-  font-size: 30px;
+  font-size: 45px;
   font-weight: 300;
   letter-spacing: 10px;
 }
