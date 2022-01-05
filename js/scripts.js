@@ -202,9 +202,6 @@ $(document).ready(function () {
 
     $('#add-to-cal').html(myCalendar);
 
-    
-    <script src="http://crypto-js.googlecode.com/svn/tags/3.0.2/build/rollups/md5.js"></script>
-
     /********************** RSVP **********************/
     $('#rsvp-form').on('submit', function (e) {
         e.preventDefault();
@@ -212,7 +209,7 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
-        if (((CryptoJS.MD5($('#invite_code')).toString()) !== '9d2eed1f555a5f9ff00bdb8388963750') || ((CryptoJS.MD5($('#invite_code')).toString()) !== '8174017745b8d9d01fc6e1fda260b9df')) {
+        if (($('#invite_code') !== '10042022') || ($('#invite_code') !== '08052022')) {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
             $.post('https://script.google.com/macros/s/1PMH0tUDWatb-c0m9FBQ5xEngO6SnAruxkMZVZpl-cbbkQMqhjrY9ATx2/exec', data)
