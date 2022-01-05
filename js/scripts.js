@@ -210,8 +210,7 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
-        if (MD5($('#invite_code').val()) !== '9d2eed1f555a5f9ff00bdb8388963750'
-            && MD5($('#invite_code').val()) !== '8174017745b8d9d01fc6e1fda260b9df') {
+        if (MD5($('#invite_code').val()) !== '9d2eed1f555a5f9ff00bdb8388963750' || MD5($('#invite_code').val()) !== '8174017745b8d9d01fc6e1fda260b9df') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
             $.post('https://script.google.com/macros/s/AKfycbzUqz44wOat0DiGjRV1gUnRf4HRqlRARWggjvHKWvqniP7eVDG-/exec', data)
