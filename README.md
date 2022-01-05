@@ -1,6 +1,6 @@
 # Wedding Website
 A beautiful, feature rich, device friendly wedding website.  
-_See [binhle59.github.io](http://binhle59.github.io/) for a demo. Use invite code `271117` to RSVP._
+_See [binhle59.github.io](http://binhle59.github.io/) for a demo. Use invite code `10042022` and `08052022` to RSVP._
 
 # Highlights
 1. Slick and fully __responsive__ design.
