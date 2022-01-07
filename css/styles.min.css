@@ -376,12 +376,15 @@ section .header {
   position: fixed;
   width: 100%;
   z-index: 999;
+  background-color: #fbd7be;
+  opacity: 0.4;
 }
 .fixed {
   position: fixed;
-  background-color: rgba(55, 36, 40, 0.88);
+  background-color: #f99e94 !important;
   z-index: 999;
   width: 100%;
+  opacity: 100%;
 }
 header {
   padding: 50px 0;
@@ -849,6 +852,7 @@ header .member-actions {
   transform: translateY(-50%);
 }
 .rsvp .rsvp-form .form-input-group i.fa-user,
+.rsvp .rsvp-form .form-input-group i.fa-streetsign,
 .rsvp .rsvp-form .form-input-group i.fa-users,
 .rsvp .rsvp-form .form-input-group i.fa-envelope,
 .rsvp .rsvp-form .form-input-group .fa-key {
