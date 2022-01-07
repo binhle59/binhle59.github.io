@@ -290,15 +290,12 @@ Hero
   position: fixed;
   width: 100%;
   z-index: 999;
-  background-color: #fbd7be;
-  opacity: 0.4;
 }
 .fixed {
   position: fixed;
-  background-color: #f99e94 !important;
+  background-color: rgba(55, 36, 40, .88);
   z-index: 999;
   width: 100%;
-  opacity: 100%;
 }
 header {
   padding: 50px 0;
