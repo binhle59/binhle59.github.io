@@ -9,14 +9,13 @@
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com:binhle59/binhle59.github.io.git"
-   
   },
   "keywords": [
     "wedding",
     "template",
     "website template"
   ],
-  "author": "Ram Patra",
+  "author": "Binh Le",
   "license": "GPL-3.0",
   "homepage": "https://github.com/binhle59/binhle59.github.io",
   "devDependencies": {
@@ -28,6 +27,7 @@
   "dependencies": {
     "animate.css": "^3.7.2",
     "font-awesome": "^4.7.0",
+    "leaflet": "^1.7.1",
     "waypoints": "^4.0.1"
   }
 }
