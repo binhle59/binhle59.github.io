@@ -196,7 +196,7 @@ $(document).ready(function () {
             address: 'Da Lat',
 
             // Event Description
-            description: "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Binh at +84 932512535."
+            description: "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Binh at +84932512535."
         }
     });
 
@@ -209,11 +209,10 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
-        if (MD5($('#invite_code').val()) !== '9d2eed1f555a5f9ff00bdb8388963750'
-        && MD5($('#invite_code').val()) !== '8174017745b8d9d01fc6e1fda260b9df') {
+        if (MD5(parseInt($('#invite_code').val())) !== '9d2eed1f555a5f9ff00bdb8388963750') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbytCADd3XjIdFG6AhcgmDX1OKaNMNHzBBc7uaH7jXy43C-puVA/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbytyTHoi62fR8l31R34P1NYlAEM62hBkBZ_i3uQ6rYcVOxsVCLgMzit6GmJDYJPNhwB/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
