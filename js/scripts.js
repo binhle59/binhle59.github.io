@@ -233,7 +233,7 @@ $(document).ready(function () {
 
       // Event Description
       description:
-        "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Binh at +84932512535.",
+        "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Binh at (+84) 932.512.535.",
     },
   });
 
