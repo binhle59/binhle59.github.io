@@ -202,50 +202,31 @@ $(document).ready(function () {
 
     $('#add-to-cal').html(myCalendar);
 
-    /********************** RSVP **********************/
-    $("#add-to-cal").html(r),
-    $("#submit-form").on("click", function (e) {
-      e.preventDefault();
-      var $form = $('form#rsvp-form');
-      $("#alert-wrapper").html(
-        alert_markup(
-          "info",
-          "<strong>Just a sec!</strong> We are saving your details."
-        )
-      ),
-        MD5(parseInt($("#invite_code").val())) !==
-        "9d2eed1f555a5f9ff00bdb8388963750"
-          ? $("#alert-wrapper").html(
-              alert_markup(
-                "danger",
-                "<strong>Sorry!</strong> Your invite code is incorrect."
-              )
-            )
-          : $.ajax({
-              url: "https://script.google.com/macros/s/AKfycbxWjR0oSneOQXPmTwSQe_grmlAutIQGlyt3reom-NXSoFn-3wQHCzp7sNKNyzDdyj_w/exec",
-              method: "GET",
-              dataType: "json",
-              data: $form.serializeObject(),
+/********************** RSVP **********************/
+    $('#rsvp-form').on('submit', function (e) {
+    e.preventDefault();
+    var data = $(this).serialize();
+
+    $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
+
+    if (MD5($('#invite_code').val()) !== '9d2eed1f555a5f9ff00bdb8388963750') {
+        $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
+    } else {
+        $.post('https://script.google.com/macros/s/AKfycbz46Ls1QEwvvNDV7QVX9ibZWZERGXS3E49Bahpsdh83wa8pDpvmJdPW1BJ6Pa0MRK2S/exec', data)
+            .done(function (data) {
+                console.log(data);
+                if (data.result === "error") {
+                    $('#alert-wrapper').html(alert_markup('danger', data.message));
+                } else {
+                    $('#alert-wrapper').html('');
+                    $('#rsvp-modal').modal('show');
+                }
             })
-              .success(function (e) {
-                console.log(e),
-                  "error" === e.result
-                    ? $("#alert-wrapper").html(
-                        alert_markup("danger", e.message)
-                      )
-                    : ($("#alert-wrapper").html(""),
-                      $("#rsvp-modal").modal("show"));
-              })
-              .error(function (e) {
-                console.log(e),
-                  $("#alert-wrapper").html(
-                    alert_markup(
-                      "danger",
-                      "<strong>Sorry!</strong> There is some issue with the server. "
-                    )
-                  );
-              });
-    });
+            .fail(function (data) {
+                console.log(data);
+                $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
+            });
+    }
 });
 
 /********************** Extras **********************/
@@ -477,3 +458,4 @@ var MD5 = function (e) {
         (h = c(h, m));
     return (r(f) + r(g) + r(u) + r(h)).toLowerCase();
   };
+});
