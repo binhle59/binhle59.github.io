@@ -780,22 +780,22 @@ header .member-actions {
   color: #ffffff;
 }
 #map-canvas {
-  height: 500px;
+  height: 550px;
   width: 100%;
 }
 #map-content-wrapper {
   position: relative;
-  margin-top: -500px;
+  margin-top: -585px;
   margin-bottom: 100px;
 }
 #map-content {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   padding: 50px 60px;
   background: #fff;
   -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
   transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
-  height: 450px;
+  height: 475px;
 }
 #btn-show-content {
   padding: 20px;
