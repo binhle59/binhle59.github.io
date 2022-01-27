@@ -318,7 +318,7 @@ function initBBSRMap() {
 <script
   async
   defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIO95iNxL2GOSPNLyYkbRFdIbHbJEbHTQ&callback=initMap"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAO-GN3z-6Sk512YOJRqud8v3UfL-9XpiI&callback=initMap"
 ></script>;
 
 // alert_markup
