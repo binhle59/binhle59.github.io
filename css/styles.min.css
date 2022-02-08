@@ -608,6 +608,10 @@ header .member-actions {
 .events .rightcol {
   padding-left: 100px;
 }
+.events .centercol {
+  padding-left: 100px;
+  border-right: solid 1px #e6e9ea;
+}
 .events .time {
   font-size: 13px;
   font-style: italic;
