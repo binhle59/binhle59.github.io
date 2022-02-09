@@ -608,10 +608,6 @@ header .member-actions {
 .events .rightcol {
   padding-left: 100px;
 }
-.events .centercol {
-  padding-left: 100px;
-  border-right: solid 1px #e6e9ea;
-}
 .events .time {
   font-size: 13px;
   font-style: italic;
@@ -764,7 +760,7 @@ header .member-actions {
   z-index: -1;
 }
 #video-bg {
-  height: 400px;
+  height: 800px;
 }
 #video-content {
   width: 100%;
