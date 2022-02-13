@@ -216,7 +216,7 @@ $(document).ready(function () {
     },
     data: {
       // Event title
-      title: "Binh&Duong's Wedding",
+      title: "BinhDuong's Wedding",
 
       // Event start date
       start: new Date("Apr 10, 2022 07:00"),
