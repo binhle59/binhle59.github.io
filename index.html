@@ -164,23 +164,25 @@
                     <div class="wp3">
                         <p><strong>ĐÀ LẠT - NGÀY 10/04/2022</strong></p>
 
-                        <h5>LỄ VU QUY <span class="time">07:00 - 14:00</span></h5>
-                        <p>It's one of the oldest traditional Vietnam wedding ceremony where the bride and groom
-                            attend the event together. This will be having a celebratory
-                            festival feel to it with people wearing vibrant clothes and dancing, singing, playing
-                            games and a lot more.</p>
+                        <h5>LỄ VU QUY  <span class="time">(Buổi sáng)</span></h5>
+                        <p>Được cử hành tại tư gia (nhà của Dương)</p>
+
+                        <h5>TIỆC CƯỚI ĐÀ LẠT  <span class="time">11:30 - 14:00</span></h5>
+                        <p>Địa điểm: Trung tâm tiệc cưới Garden Palace - Đà Lạt</p>
+                    
+                        <h5>TIỆC THÂN MẬT <span class="time">17:00 - 22:00</span></h5>
+                        <p>Tiệc quẩy nhẹ dành riêng cho những người thân thiết nhất của Bình & Dương</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
                     <div class="wp4">
                         <p><strong>QUẢNG NAM  - NGÀY 08/05/2022</strong></p>
 
-                        <h5>LỄ THÀNH HÔN  <span class="time">08:00 - 14:00</span></h5>
-                        <p>Lễ thành hôn sẽ được diễn ra tại tư gia nam vào lúc 8h sáng, tại Đại Lãnh - Đại Lộc - Quãng Nam
-                            This is the main event in the entire wedding when the bride and the groom tie the
-                            knot. The groom comes with the barat and is greeted by the bride side with some ahol of
-                            course
-                            as maximum number of guests would be attending this event.</p>
+                        <h5>LỄ THÀNH HÔN  <span class="time"> (Buổi sáng)</span></h5>
+                        <p>Lễ thành hôn sẽ được diễn ra tại tư gia nam (nhà của Bình))</p>
+
+                        <h5>TIỆC CƯỚI QUẢNG NAM  <span class="time"> 11:00 - 14:00</span></h5>
+                        <p> Địa điểm: Nhà văn hoá - Tịnh Đông Tây, Đại Lãnh, Đại Lộc, Quảng Nam</p>
                     </div>
                 </div>
             </div>
@@ -296,8 +298,8 @@
 
     <section id="map" class="section-padding">
         <div class="text-center">
-            <h3>How do I get there?</h3>
-            <p>It's way easier than you think!</p>
+            <h3>CÁC BẠN ƠI, TIỆC Ở ĐÂU THẾ?</h3>
+            <p>Xem bản đồ cái là biết nè!</p>
         </div>
         <div id="map-canvas"></div>
         <div id="map-content-wrapper" class="container pointer-events-none">
@@ -361,13 +363,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
-                    <h3>What are you waiting for?</h3>
-                    <p>We would greatly appreciate if you could RSVP before <b style="color: rgb(230, 26, 26)">15th of March '22</b></p>
+                    <h3>VẬY THÌ CÒN CHẦN CHỜ CHI NỮA?</h3>
+                    <p>Ngày mình bên nhau dây tơ hồng lại nối thành đôi =))</p>
+                    <p>-------</p>
+                    <p>Tụi mình rất biết ơn nếu bạn có thể hỗ trợ tụi mình xác nhận tham dự đám cưới trước ngày 15/03/2022 để tụi mình có thể chuẩn bị được chu đáo nhất cho ngày trọng đại này.</p>
+                    <p>Chốt đơn tham dự tiệc của tụi mình <b>bằng cách điền thông tin bên dưới</b> nhé!
+                        <br>Thiệp mời sẽ sớm được gửi đến bạn. Cảm ơn bạn <3! </p>
                     <form id="rsvp-form" class="rsvp-form" action="" method="POST">
                         <div class="row">
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-input-group">
-                                    <i class="fa fa-user"></i><input name="name" class="" placeholder="Khách mời"
+                                    <i class="fa fa-user"></i><input name="name" class="" placeholder="Tên của bạn"
                                         required>
                                 </div>
                             </div>
@@ -381,8 +387,13 @@
                         <div class="row">
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-input-group">
-                                    <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                        max="2" placeholder="# người đi cùng" required>
+                                    <i class="fa fa-users"></i><select name="extras" class="" min="0">
+                                        <option value="" disabled selected> Có đi cùng ai không?</option>
+                                        <option value="0">Không nha!</option>
+                                        <option value="1">Đi vs 1 người bạn</option>
+                                        <option value="2">Đi vs gia đình</option>
+                                    </select>
+                                        
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6">
@@ -399,7 +410,7 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-input-group">
                                     <i class="fa fa-home"></i><input type="text" name="address_invitation" id="address_invitation"
-                                        class="" min="0" placeholder="Địa chỉ nhận thiệp" optional>
+                                        class="" min="0" placeholder="Địa chỉ nhận thiệp (ko bắt buộc)" optional>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6">
@@ -425,7 +436,7 @@
                             <div class="col-md-12" id="alert-wrapper"></div>
                         </div>
                         <button class="btn-fill rsvp-btn">
-                            Vâng, tôi tham gia!
+                            OK, rồi tới luôn!
                         </button>
                     </form>
                 </div>
@@ -436,7 +447,7 @@
     <section class="donate text-center" id="donate">
         <div class="container">
             <div class="row">
-                <h5>SAkjHASLFHSJAHFKJHaskf</h5>
+                <p>Nếu bạn muốn chia vui với tụi mình nhưng không thể tham dự trực tiếp, thông tin dùng chung của tụi mình  dưới đây có thể bạn sẽ có ích nè:</p>
                 <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
                     <div class="wp3">
                         <p><strong>VIETCOMBANK - CN Đà Nẵng</strong>
