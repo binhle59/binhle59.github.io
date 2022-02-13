@@ -216,7 +216,7 @@ $(document).ready(function () {
     },
     data: {
       // Event title
-      title: "Binh and Duong's Wedding",
+      title: "Binh&Duong's Wedding",
 
       // Event start date
       start: new Date("Apr 10, 2022 07:00"),
@@ -247,7 +247,7 @@ $(document).ready(function () {
     $("#alert-wrapper").html(
       alert_markup(
         "info",
-        "<strong>Just a sec!</strong> We are saving your details."
+        "<strong>Đợi tí!</strong> Tụi mình đang lưu thông tin."
       )
     );
 
@@ -255,7 +255,7 @@ $(document).ready(function () {
       $("#alert-wrapper").html(
         alert_markup(
           "danger",
-          "<strong>Sorry!</strong> Your invite code is incorrect."
+          "<strong>Sorry!</strong> Bạn đã nhập sai mã rồi. Nhập lại mã 10042022 nhé!"
         )
       );
     } else {
@@ -277,7 +277,7 @@ $(document).ready(function () {
           $("#alert-wrapper").html(
             alert_markup(
               "danger",
-              "<strong>Sorry!</strong> There is some issue with the server. "
+              "<strong>Sorry!</strong> Ối dồi ôiiii !!! Sơ vờ bị lỗi rồi :(. "
             )
           );
         });
