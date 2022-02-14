@@ -297,7 +297,7 @@ section .header {
   -moz-border-radius: 1px;
   -webkit-border-radius: 1px;
   border-radius: 1px;
-  background: #fff;
+  background: rgb(0, 0, 0);
   cursor: pointer;
 }
 .nav-toggle span:before {
