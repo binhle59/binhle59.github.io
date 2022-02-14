@@ -296,7 +296,8 @@
   }
 
   .hero .hero-content img {
-    width: 65%;
+    width: 80%;
+    padding-top: 110px;
   }
 
   .hero .btn {

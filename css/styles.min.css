@@ -345,8 +345,8 @@ section .header {
   transition: all 300ms ease-in-out;
 }
 .hero {
-  min-height: 750px;
-  background: url("../img/hero-min.jpg") center center;
+  min-height: 900px;
+  background: url("../img/hero.jpg") center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -370,8 +370,9 @@ section .header {
   padding-top: 40%;
 }
 .hero .hero-content img {
-  width: 55%;
-  margin-bottom: 12%;
+  width: 50%;
+  margin-bottom: 3%;
+  padding-top: 100px;
 }
 .navigation {
   transition: all 300ms ease-in-out;
