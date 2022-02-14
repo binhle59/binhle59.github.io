@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
 p {
-  font-size: 15px;
+  font-size: 13px;
   line-height: 29px;
   color: rgba(28, 54, 83, 0.6);
   padding-bottom: 20px;
@@ -479,7 +479,7 @@ header .member-actions {
   height: auto;
 }
 #intro p {
-  text-align: center;
+  text-align: left;
 }
 .features {
   position: relative;
