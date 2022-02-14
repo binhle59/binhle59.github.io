@@ -1,12 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&family=Playfair+Display:ital,wght@0,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Playfair+Display:ital,wght@0,400;1,700&display=swap");
 
 p {
-  font-size: 13px;
-  line-height: 29px;
-  color: rgba(28, 54, 83, 0.6);
+  font-size: 15px;
+  line-height: 30px;
+  color: rgb(0, 0, 0);
   padding-bottom: 20px;
 }
 h1 {
