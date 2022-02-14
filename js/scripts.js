@@ -208,41 +208,13 @@ $(document).ready(function () {
   });
 
   /********************** Add to Calendar **********************/
-  var myCalendar = createCalendar({
-    options: {
-      class: "",
-      // You can pass an ID. If you don't, one will be generated for you
-      id: "",
-    },
-    data: {
-      // Event title
-      title: "BinhDuong's Wedding",
-
-      // Event start date
-      start: new Date("Apr 10, 2022 07:00"),
-
-      // Event duration (IN MINUTES)
-      // duration: 120,
-
-      // You can also choose to set an end time
-      // If an end time is set, this will take precedence over duration
-      end: new Date("Apr 10, 2022 23:00"),
-
-      // Event Address
-      address: "Da Lat",
-
-      // Event Description
-      description:
-        "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Binh at (+84) 932.512.535.",
-    },
-  });
-
-  $("#add-to-cal").html(myCalendar);
-
-  /********************** RSVP **********************/
+  //=========RSVP and Add Calendar =================
   $("#rsvp-form").on("submit", function (e) {
     e.preventDefault();
     var data = $(this).serialize();
+    var addLocation;
+    var startDate;
+    var endDate;
 
     $("#alert-wrapper").html(
       alert_markup(
@@ -250,6 +222,31 @@ $(document).ready(function () {
         "<strong>Đợi tí!</strong> Tụi mình đang lưu thông tin."
       )
     );
+
+    //============= Add Calendar ======
+    if ($("#invite_location :selected").val() == "DaLat") {
+      addLocation = "Garden Palace, 1A Cô Giang, Da Lat, Lam Dong";
+      startDate = new Date("Apr 10, 2022 07:00");
+      endDate = new Date("Apr 10, 2022 23:00");
+    } else if ($("#invite_location :selected").val() == "QuangNam") {
+      addLocation = "Tịnh Đông Tây, Đại Lãnh, Đại Lộc, Quảng Nam";
+      startDate = new Date("May 08, 2022 07:00");
+      endDate = new Date("May 08, 2022 23:00");
+    } else {
+      console.log("Somethings wrong!");
+    }
+
+    var r = createCalendar({
+      options: { class: "", id: "" },
+      data: {
+        title: "BinhDuong's Wedding",
+        start: startDate,
+        end: endDate,
+        address: addLocation,
+        description:
+          "We can't wait to see you on our big day. For any queries or issues, please contact Binh (+84932.512.535) or Duong (+84399272935)",
+      },
+    });
 
     if (MD5($("#invite_code").val()) !== "9d2eed1f555a5f9ff00bdb8388963750") {
       $("#alert-wrapper").html(
@@ -270,6 +267,7 @@ $(document).ready(function () {
           } else {
             $("#alert-wrapper").html("");
             $("#rsvp-modal").modal("show");
+            $("#add-to-cal").html(r);
           }
         })
         .fail(function (data) {
