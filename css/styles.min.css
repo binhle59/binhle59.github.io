@@ -451,7 +451,7 @@ header .header-nav {
 }
 header .member-actions {
   position: absolute;
-  right: 0;
+  right: -50px;
   top: 41px;
   transition: all 300ms ease-in-out;
 }
