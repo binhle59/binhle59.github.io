@@ -7,7 +7,7 @@ $(document).ready(function () {
     },
     {
       offset: "75%",
-    }
+    },
   );
   $(".wp2").waypoint(
     function () {
@@ -15,7 +15,7 @@ $(document).ready(function () {
     },
     {
       offset: "75%",
-    }
+    },
   );
   $(".wp3").waypoint(
     function () {
@@ -23,7 +23,7 @@ $(document).ready(function () {
     },
     {
       offset: "75%",
-    }
+    },
   );
   $(".wp4").waypoint(
     function () {
@@ -31,7 +31,7 @@ $(document).ready(function () {
     },
     {
       offset: "75%",
-    }
+    },
   );
   $(".wp5").waypoint(
     function () {
@@ -39,7 +39,7 @@ $(document).ready(function () {
     },
     {
       offset: "75%",
-    }
+    },
   );
   $(".wp6").waypoint(
     function () {
@@ -47,7 +47,7 @@ $(document).ready(function () {
     },
     {
       offset: "75%",
-    }
+    },
   );
   $(".wp7").waypoint(
     function () {
@@ -55,7 +55,7 @@ $(document).ready(function () {
     },
     {
       offset: "75%",
-    }
+    },
   );
   $(".wp8").waypoint(
     function () {
@@ -63,7 +63,7 @@ $(document).ready(function () {
     },
     {
       offset: "75%",
-    }
+    },
   );
   $(".wp9").waypoint(
     function () {
@@ -71,7 +71,7 @@ $(document).ready(function () {
     },
     {
       offset: "75%",
-    }
+    },
   );
 
   /***************** Initiate Flexslider ******************/
@@ -159,7 +159,7 @@ $(document).ready(function () {
             {
               scrollTop: target.offset().top - 90,
             },
-            2000
+            2000,
           );
           return false;
         }
@@ -219,8 +219,8 @@ $(document).ready(function () {
     $("#alert-wrapper").html(
       alert_markup(
         "info",
-        "<strong>Đợi tí!</strong> Tụi mình đang lưu thông tin."
-      )
+        "<strong>Đợi tí!</strong> Tụi mình đang lưu thông tin.",
+      ),
     );
 
     //============= Add Calendar ======
@@ -248,17 +248,17 @@ $(document).ready(function () {
       },
     });
 
-    if (MD5($("#invite_code").val()) !== "9d2eed1f555a5f9ff00bdb8388963750") {
+    if (MD5($("#invite_code").val()) !== "8174017745b8d9d01fc6e1fda260b9df") {
       $("#alert-wrapper").html(
         alert_markup(
           "danger",
-          "<strong>Sorry!</strong> Bạn đã nhập sai mã rồi. Nhập lại mã 10042022 nhé!"
-        )
+          "<strong>Sorry!</strong> Bạn đã nhập sai mã rồi. Nhập lại mã 08052022 nhé!",
+        ),
       );
     } else {
       $.post(
-        "https://script.google.com/macros/s/AKfycbz46Ls1QEwvvNDV7QVX9ibZWZERGXS3E49Bahpsdh83wa8pDpvmJdPW1BJ6Pa0MRK2S/exec",
-        data
+        "https://script.google.com/macros/s/AKfycbyqFBXh45xw1yDwKhcDqpWtXhToKQ8b6WA4ub3anwTZKCJf0pu4GnMfvGaPIIynhALt/exec",
+        data,
       )
         .done(function (data) {
           console.log(data);
@@ -275,8 +275,8 @@ $(document).ready(function () {
           $("#alert-wrapper").html(
             alert_markup(
               "danger",
-              "<strong>Sorry!</strong> Ối dồi ôiiii !!! Sơ vờ bị lỗi rồi :(. "
-            )
+              "<strong>Sorry!</strong> Ối dồi ôiiii !!! Sơ vờ bị lỗi rồi :(. ",
+            ),
           );
         });
     }
@@ -369,7 +369,7 @@ var MD5 = function (e) {
     for (t = 0; t <= 3; t++)
       a += (n = "0" + ((e >>> (8 * t)) & 255).toString(16)).substr(
         n.length - 2,
-        2
+        2,
       );
     return a;
   }
@@ -420,7 +420,7 @@ var MD5 = function (e) {
               (t += String.fromCharCode((63 & n) | 128)));
         }
         return t;
-      })(e))
+      })(e)),
     ),
       f = 1732584193,
       g = 4023233417,
@@ -452,7 +452,7 @@ var MD5 = function (e) {
         h,
         w[i + 1],
         5,
-        4129170786
+        4129170786,
       )),
       (h = a(h, f, g, u, w[i + 6], 9, 3225465664)),
       (u = a(u, h, f, g, w[i + 11], 14, 643717713)),
@@ -475,7 +475,7 @@ var MD5 = function (e) {
         h,
         w[i + 5],
         4,
-        4294588738
+        4294588738,
       )),
       (h = n(h, f, g, u, w[i + 8], 11, 2272392833)),
       (u = n(u, h, f, g, w[i + 11], 16, 1839030562)),
@@ -498,7 +498,7 @@ var MD5 = function (e) {
         h,
         w[i + 0],
         6,
-        4096336452
+        4096336452,
       )),
       (h = o(h, f, g, u, w[i + 7], 10, 1126891415)),
       (u = o(u, h, f, g, w[i + 14], 15, 2878612391)),
